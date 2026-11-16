@@ -2,6 +2,8 @@
 
 A dependency-free recreation of a minimal writing toolbar: paragraph-level **bold / italic / underline**, **four-way alignment**, and word-by-word layout animation. Built as a front-end interaction study from an 8.57-second reference clip.
 
+**Live demo:** [writingtoolinteraction.vercel.app](https://writingtoolinteraction.vercel.app)
+
 ![Preview of the writing tool](docs/preview.png)
 
 ## Highlights
