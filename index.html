@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#131313"><title>Writing Tool Interaction</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<main class="writing-tool" aria-label="Writing tool">
+  <div class="toolbar" role="toolbar" aria-label="Paragraph formatting">
+    <div class="control-group formats" role="group" aria-label="Text style">
+      <button type="button" data-format="bold" aria-label="Bold" aria-pressed="true" title="Bold · ⌘/Ctrl B"><svg viewBox="0 0 24 24"><path d="M7 12h7a4 4 0 0 1 0 8H7V4h6a4 4 0 0 1 0 8"/></svg></button>
+      <button type="button" data-format="italic" aria-label="Italic" aria-pressed="false" title="Italic · ⌘/Ctrl I"><svg viewBox="0 0 24 24"><path d="M11 4h9M4 20h9M15.5 4l-7 16"/></svg></button>
+      <button type="button" data-format="underline" aria-label="Underline" aria-pressed="false" title="Underline · ⌘/Ctrl U"><svg viewBox="0 0 24 24"><path d="M6 4v6a6 6 0 0 0 12 0V4M4 20h16"/></svg></button>
+    </div>
+    <div class="control-group alignments" role="group" aria-label="Text alignment">
+      <span class="alignment-indicator" aria-hidden="true"></span>
+      <button type="button" data-align="left" aria-label="Align left" aria-pressed="true" title="Align left"><svg viewBox="0 0 24 24"><path d="M3 5h18M3 12h12M3 19h14"/></svg></button>
+      <button type="button" data-align="center" aria-label="Align center" aria-pressed="false" title="Align center"><svg viewBox="0 0 24 24"><path d="M3 5h18M7 12h10M5 19h14"/></svg></button>
+      <button type="button" data-align="right" aria-label="Align right" aria-pressed="false" title="Align right"><svg viewBox="0 0 24 24"><path d="M3 5h18M9 12h12M7 19h14"/></svg></button>
+      <button type="button" data-align="justify" aria-label="Justify" aria-pressed="false" title="Justify"><svg viewBox="0 0 24 24"><path d="M3 5h18M3 12h18M3 19h18"/></svg></button>
+    </div>
+  </div>
+  <div class="paper"><div id="editor" contenteditable="plaintext-only" role="textbox" aria-label="Write your text" aria-multiline="true" spellcheck="false" data-bold="true" data-italic="false" data-underline="false">Our spring release is about the details people touch every day: faster search, calmer notifications, and a sidebar that remembers where you left off. Every change was tested with the teams who asked for it.</div></div>
+  <span class="sr-only" id="status" role="status" aria-live="polite"></span>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
